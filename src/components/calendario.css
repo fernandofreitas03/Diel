@@ -1,0 +1,174 @@
+.calendario-container {
+    margin: 0 auto;
+    width: 90.8vh;
+    
+}
+
+.fc-daygrid-day {
+    width: 10vh;
+    height: 10vh; 
+  }
+  
+
+.cell-content {
+    display: flex;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    border-radius: 1px;
+    padding: 5px;
+  }
+  
+.summary {
+    position: relative;
+    padding: 0em 0em 0em 0.5em;
+    color: white;
+    background-color: #2C3E50;
+    font-weight: 500;    
+}
+
+.summary:hover {
+    background-color: #34495e;
+    transition: background-color 0.3s ease;
+}
+
+.popover__label  {
+    color: white;
+}
+
+.formulario-container {
+    position: relative;
+    display: flex;
+    left: 140px;
+    max-width: 100%; 
+    margin: 0 auto;
+    padding: 0.5em;
+  }
+  
+.popover-form {
+    position: relative;
+    width: 30vh;
+    right: 391px;
+    padding: 0.5em;
+    background-color: #34495e;
+}
+
+.popover__input-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 21.8em;
+    right: 10px;
+    margin: 1em;
+    cursor: text;
+}
+
+.popover__input-descricao {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 21.8em;
+    right: 10px;
+    margin: 1em;
+    cursor: text;
+}
+
+.popover__input {
+    position: relative;
+    width: 10em;
+    margin: 0.5em;
+    cursor: text;
+}
+
+.popover__button {
+    position: relative;
+    left: 272px;
+    cursor: pointer;
+}
+
+/* Estilos para dispositivos de tamanho maior que o iPhone 14 Pro Max */
+@media (min-width: 428px) {
+    .calendario-container {
+      width: 90.8vh;
+    }
+
+    .formulario-container {
+        width: 90vh;
+        max-width: 400px;
+        display: flex;
+        margin-left: 200px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .popover__input-title,
+    .popover__input-descricao{
+        position: relative;
+        width: 90%;
+        max-width: 300px;
+        margin-left: 11px;
+    }
+
+    .popover__input {
+        position: relative;
+        width: 90%;
+        max-width: 300px;
+        margin-left: 4px;
+    }
+
+    .popover-form {
+        padding: 1em;
+    }
+    
+    .popover__button {
+        position: relative;
+        display: flex;
+        margin-left: -88px;
+        margin-top: 0.5em;
+        cursor: pointer;
+    }
+
+  }
+  
+  /* Estilos para dispositivos de tamanho menor que o iPhone 14 Pro Max */
+  @media (max-width: 428px) {
+    .calendario-container {
+        width: 85vh; /* Ajuste conforme necessário */
+    }
+    .formulario-container {
+        width: 90vh;
+        max-width: 400px;
+        display: flex;
+        margin-left: 200px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .popover__input-title,
+    .popover__input-descricao{
+        position: relative;
+        width: 90%;
+        max-width: 300px;
+        margin-left: 11px;
+    }
+
+    .popover__input {
+        position: relative;
+        width: 90%;
+        max-width: 300px;
+        margin-left: 4px;
+    }
+
+    .popover-form {
+        padding: 1em;
+    }
+    
+    .popover__button {
+        position: relative;
+        display: flex;
+        margin-left: -88px;
+        margin-top: 0.5em;
+        cursor: pointer;
+    }
+  }
+  
